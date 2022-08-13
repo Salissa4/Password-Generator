@@ -60,10 +60,9 @@ var userInput = [];
     
     }
     
-    else (numbers){
+    else (numbers) 
       generatePass = generatePass.concat(numbers);
-    }
-    console.log(generatePass)
+      console.log(generatePass)
     
     
     for (var i = 0; i < length ; i++) {
