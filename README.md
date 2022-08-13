@@ -19,8 +19,8 @@ https://salissa4.github.io/Password-Generator/
 ## Credits
 
 Collaborators: 
-Tomas Diaz https://github.com/tomasdiaz83
-Handruliz Nova 
+1. Tomas Diaz https://github.com/tomasdiaz83
+2. Handruliz Nova 
 
 ## License
 
