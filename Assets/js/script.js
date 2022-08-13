@@ -3,14 +3,14 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword () {
 
-  //array for characters to generate password
-var symbols = [ "!", "#", "$", "%", "&", "@", "*"];
+//array for characters to generate password
 var upperCase = [
   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", 
   "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", 
   "U", "V", "W", "X", "Y", "Z"];
-var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",  "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var symbols = [ "!", "#", "$", "%", "&", "@", "*"];
+var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 var generatePass = [];
 var userInput = [];
@@ -29,9 +29,9 @@ var userInput = [];
       return null;
     }
   //var to confirm special characters, numbers, upperCase, lowerCase
-    var hasUpperCase = confirm ("Click ok to include special characters.");
-    var hasLowerCase = confirm ("Click ok to include upper case alpha.");
-    var hasSymbols = confirm ("Click ok to include lower case alpha.");
+    var hasUpperCase = confirm ("Click ok to include upper case alpha.");
+    var hasLowerCase = confirm ("Click ok to include lower case alpha.");
+    var hasSymbols = confirm ("Click ok to include symbols.");
     var hasNumbers = confirm ("Click ok to include numbers.");
 
   //if password doesnt include any of these fail password generator
@@ -50,17 +50,17 @@ var userInput = [];
       
     }
     
-   else if (lowerCase){
+   if (lowerCase){
       generatePass = generatePass.concat(lowerCase);
     
     }
     
-    else if (symbols){
+    if (symbols){
       generatePass = generatePass.concat(symbols);
     
     }
     
-    else (numbers) 
+    if (numbers) 
       generatePass = generatePass.concat(numbers);
       console.log(generatePass)
     
