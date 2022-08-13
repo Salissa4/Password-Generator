@@ -45,22 +45,22 @@ var userInput = [];
       return null;
     };
   
-  if (upperCase){
+  if (hasUpperCase){
       generatePass = generatePass.concat(upperCase);
       
     }
     
-   if (lowerCase){
+   if (hasLowerCase){
       generatePass = generatePass.concat(lowerCase);
     
     }
     
-    if (symbols){
+    if (hasSymbols){
       generatePass = generatePass.concat(symbols);
     
     }
     
-    if (numbers) 
+    if (hasNumbers) 
       generatePass = generatePass.concat(numbers);
       console.log(generatePass)
     
