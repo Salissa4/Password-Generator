@@ -14,7 +14,7 @@ Actions:
 
 https://salissa4.github.io/Password-Generator/
 
-<img src="./assets/images/passgen.jpg">
+<img src="./Assets/images/passgen.jpg">
 
 ## Credits
 
